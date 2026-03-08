@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="EbaySuite" parallel="false">
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+        <listener class-name="com.ebay.listeners.TestListener"/>
+    </listeners>
+    <test name="HomeAndSearchTests">
+        <classes>
+            <class name="com.ebay.tests.TC01_HomeTest"/>
+            <class name="com.ebay.tests.TC02_SearchResultsTest"/>
+        </classes>
+    </test>
+</suite>
