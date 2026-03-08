@@ -19,5 +19,12 @@ public class TC01_HomeTest extends BaseTest{
     }
 
 
+    @Test
+    public void validateHomeBanners(){
+        homePage.navigateToHomePage();
+        boolean isBannerShowed = homePage.verifyUserShowsToHimHomePageBanners();
+        Assert.assertTrue(isBannerShowed);
+    }
+
 
 }
